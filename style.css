@@ -1,9 +1,75 @@
-*{
+@font-face {
+    font-family: 'nb';
+    src: url('NBInternationalProBoo.ttf');
+}
+
+@font-face {
+    font-family: 'rejoy';
+    src: url('Rejouice-Headline.ttf');
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "nb";
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#page1 video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+#page1-content {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(102, 51, 153, 0);
+    padding: 3vw 3vw;
+    font-size: 1.4vw;
+}
+
+nav h3 {
+    font-weight: 100;
+
+}
+
+nav h4 {
+    font-weight: 100;
+}
+
+#page1-content h1>span {
+    font-family: "rejoy";
+    line-height: 27vw;
+    font-size: 27vw;
+    font-weight: 100;
 }
