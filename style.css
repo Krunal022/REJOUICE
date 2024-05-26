@@ -34,7 +34,7 @@ body {
     object-fit: cover;
 }
 
-#cursor{
+#cursor {
     width: 7.5vw;
     height: 7.5vw;
     position: fixed;
@@ -46,7 +46,8 @@ body {
     justify-content: center;
     transform: translate(-50%-50%);
 }
-#cursor h5{
+
+#cursor h5 {
     font-size: 1.15vw;
     font-weight: 500;
 }
@@ -57,11 +58,12 @@ body {
     /* background-color: rgba(0, 0, 0, 0); */
     z-index: 10;
     position: relative;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* text-wrap: nowrap; */
 }
 
 nav {
@@ -83,14 +85,52 @@ nav h4 {
 }
 
 #page1-content h1>span {
+    /* z-index: 9999; */
+    /* background-color: rebeccapurple; */
     font-family: "rejoy";
     line-height: 27vw;
     font-size: 27vw;
     font-weight: 100;
 }
 
-#page2{
+#page2 {
     width: 100%;
     height: 100vh;
     background-color: beige;
+    padding: 5vw 4vw;
+}
+
+#page2-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page2-heading h2 {
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.792);
+    font-weight: 400;
+}
+
+#page2 .word {
+    transform: translateY(115px);
+    transition: transform .3s;
+}
+
+#line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.845);
+    margin: 1vw;
+}
+
+#page2 h1 {
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+    /* background-color: gainsboro; */
+    font-size: 4vw;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-family: "nb";
 }

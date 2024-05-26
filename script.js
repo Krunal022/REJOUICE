@@ -25,3 +25,23 @@ page1Content.addEventListener("mouseleave",function(){
 
 }
 cursorEffect()
+
+function page2textEffect(){
+    const myText = new SplitType('.page2-h1 , h2')
+
+gsap.to('.word',{
+    y:0,
+    stagger:0.05,
+    delay:0.2,
+    duration:.1,
+    scrollTrigger:{
+        trigger:"#page2",
+        scroller:"body",
+        start:"top 83%",
+        end:"top 85%",
+        // markers:true,
+        scrub:2
+    }
+})
+}
+page2textEffect()
