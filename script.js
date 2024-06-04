@@ -34,7 +34,7 @@ locoScroll()
 
 function cursorEffect(){
     var page1Content = document.querySelector("#page1-content")
-var cursor = document.querySelector("#cursor")
+    var cursor = document.querySelector("#cursor")
 
 page1Content.addEventListener("mousemove",function(dets){
     gsap.to(cursor,{
@@ -78,6 +78,53 @@ function page2textEffect(){
         }
     })
 }
-
 page2textEffect()
 
+function page4textEffect(){
+    const myText = new SplitType('.page4-h1 , .page4-h2')
+
+    gsap.to('.word',{
+        y:0,
+        stagger:0.05,
+        delay:0.2,
+        duration:.1,
+        scrollTrigger:{
+            trigger:"#page4",
+            scroller:"#main",
+            start:"top 83%",
+            end:"top 85%",
+            // markers:true,
+            scrub:2
+        }
+    })
+}
+page4textEffect()
+
+function page4VideoCursor(){
+
+    var pageVideo = document.querySelector("#loopVideo")
+    var cursorx = document.querySelector("#page4-cursor")
+
+        
+    pageVideo.addEventListener("mousemove",function(dets){
+        gsap.to(cursorx,{
+            y:dets.y,
+            x:dets.x,
+        })
+    })
+
+    pageVideo.addEventListener("mouseenter",function(){
+        gsap.to(cursorx,{
+            scale:1,
+            opacity:1
+        })
+    })
+
+    pageVideo.addEventListener("mouseleave",function(){
+        gsap.to(cursorx,{
+            scale:0,
+            opacity:0
+        })
+    })
+}
+page4VideoCursor()
