@@ -21,17 +21,23 @@ body {
     height: 100%;
 }
 
-#page1 {
+#loader {
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 7px;
 }
 
-#page1 video {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
+#loader h3 {
+    font-size: 2vw;
 }
 
 #cursor {
@@ -50,6 +56,19 @@ body {
 #cursor h5 {
     font-size: 1.15vw;
     font-weight: 500;
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#page1 video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
 }
 
 #page1-content {
@@ -87,6 +106,7 @@ nav h4 {
 #page1-content h1>span {
     /* z-index: 9999; */
     /* background-color: rebeccapurple; */
+    display: inline-block;
     font-family: "rejoy";
     line-height: 27vw;
     font-size: 27vw;
