@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 #cursor h5 {
@@ -136,33 +136,37 @@ nav h4 {
     font-family: "nb";
 }
 
-#page3{
+#page3 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     padding: 3vw;
 }
-#page3-top{
+
+#page3-top {
     text-align: center;
 }
-#page3-top h4{
+
+#page3-top h4 {
     font-weight: 500;
     margin-bottom: 1vw;
-    font-size:1vw ;
+    font-size: 1vw;
 }
-#page3-top h4 span{
+
+#page3-top h4 span {
     font-size: 0.7vw;
     color: white;
     background-color: black;
     padding: 4px 10px;
     border-radius: 10px;
 }
-#page3-top h2{
+
+#page3-top h2 {
     font-size: 4vw;
     font-weight: 500;
 }
 
-#page3-elements{
+#page3-elements {
     margin-top: 8vw;
     height: 75vh;
     width: 100%;
@@ -171,18 +175,21 @@ nav h4 {
     align-items: center;
     justify-content: space-between;
 }
-#page3-elements .box{
+
+#page3-elements .box {
     position: relative;
     height: 100%;
     width: 32.5%;
 }
-#page3-elements .box video{
+
+#page3-elements .box video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-#page3-elements .box img{
+
+#page3-elements .box img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -190,35 +197,41 @@ nav h4 {
     object-position: center;
     transition: all linear .6s;
 }
-#page3-elements .box:hover img{
+
+#page3-elements .box:hover img {
     opacity: 0;
 }
 
-#page4{
+#page4 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     padding: 4vw 4vw;
 }
-#page4-top{
+
+#page4-top {
     margin-top: 4vh;
 }
-#page4-heading h2{
+
+#page4-heading h2 {
     clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
     font-size: 2vw;
     color: rgba(0, 0, 0, 0.845);
     font-weight: 400;
 }
+
 #page4 .word {
     transform: translateY(115px);
     transition: transform .3s;
 }
+
 #line {
     width: 100%;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.845);
     margin: 1vw;
 }
+
 #page4 h1 {
     clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
     /* background-color: gainsboro; */
@@ -227,12 +240,14 @@ nav h4 {
     color: rgb(0, 0, 0);
     font-family: "nb";
 }
-#page4-bottom{
+
+#page4-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#page4-cursor{
+
+#page4-cursor {
     width: 7vw;
     height: 7vw;
     background-color: rgba(0, 0, 0, 0.696);
@@ -242,15 +257,17 @@ nav h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
 }
-#page4-cursor h5{
+
+#page4-cursor h5 {
     font-size: 1.2vw;
     font-weight: 500;
     color: white;
-    
+
 }
-#loopVideo{
+
+#loopVideo {
     height: 100vh;
     /* width: 100%; */
     position: relative;
@@ -258,26 +275,29 @@ nav h4 {
     align-items: center;
     justify-content: center;
 }
-#loopVideo video{
+
+#loopVideo video {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     /* background-color: rgb(0, 0, 0); */
 }
-#loopVideo svg{
+
+#loopVideo svg {
     position: absolute;
-    height: 65% ;
+    height: 65%;
 }
 
-#page5{
+#page5 {
     width: 100%;
     height: 100vh;
     padding: 4vw 0;
     /* background-color: rebeccapurple; */
     position: relative;
 }
-#page5 h1{
+
+#page5 h1 {
     font-weight: 100;
     font-family: rejoy;
     font-size: 10vw;
@@ -285,9 +305,33 @@ nav h4 {
     width: 96%;
     margin-left: 2%;
 }
-#swiperdiv{
+
+#swiperdiv {
     height: 60vh;
     width: 100%;
-    background-color: rgba(0, 0, 139, 0.491);
     position: relative;
+    margin-top: -10%;
+}
+
+.swiper {
+    width: 110%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* background: #d8d8d8; */
+    /* height: 500px; */
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    /* justify-content: space-evenly; */
+    gap: 30px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 18.5%;
+    object-fit: cover;
 }
